@@ -14,6 +14,8 @@
     <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/jquery.dataTables.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -80,7 +82,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <!-- <script src="{{ asset('js/bootstrap.min.js') }}"></script> -->
+    <script src="{{ asset('js/dataTables.min.js') }}"></script>
     @yield('scripts')
 </body>
 </html>
