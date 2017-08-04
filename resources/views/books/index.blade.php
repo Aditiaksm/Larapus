@@ -12,7 +12,7 @@
 					<h2 class="panel-title">Buku</h2>
 				</div>
 				<div class="panel-body">
-					<p><a class="btn btn-primary" href="{{ url('/admin/books/index') }}">Tambah</a></p>
+					<p><a class="btn btn-primary" href="{{ url('/admin/books/create') }}">Tambah</a></p>
 					{!! $html->table(['class'=>'table-striped']) !!}
 				</div>
 			</div>
@@ -20,7 +20,6 @@
 	</div>
 </div>
 @endsection
-
 @section('scripts')
 {!! $html->scripts() !!}
 @endsection

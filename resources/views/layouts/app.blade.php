@@ -15,7 +15,7 @@
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/jquery.dataTables.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/dataTables.bootstrap.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -45,6 +45,7 @@
                         @endif
                         @role('admin')
                         <li><a href="{{ route('authors.index') }}">Penulis</a></li>
+                        <li><a href="{{ route('books.index') }}">Buku</a></li>
                         @endrole
                     </ul>
 
@@ -87,7 +88,6 @@
     <script src="/js/app.js"></script>
     <script src="{{ asset('/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('/js/dataTables.bootstrap.min.js') }}"></script>
-    <!-- <script src="{{ asset('js/selectize.min.js') }}"></script> -->
     <script src="/js/custom.js"></script>
     @yield('scripts')
     </body>
